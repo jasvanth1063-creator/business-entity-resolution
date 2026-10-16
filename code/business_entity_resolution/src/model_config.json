@@ -1,0 +1,121 @@
+{
+  "kind": "gbdt",
+  "gbdt": {
+    "family": "hist_gbm",
+    "params": {
+      "l2_regularization": 10.0,
+      "learning_rate": 0.1,
+      "max_iter": 200,
+      "max_leaf_nodes": 127,
+      "min_samples_leaf": 200
+    },
+    "positive_weight": 1.0
+  },
+  "mlp": null,
+  "blend": null,
+  "features": [
+    "n_ratio",
+    "n_partial",
+    "n_tsort",
+    "n_tset",
+    "n_jw",
+    "n_jacc",
+    "n_exact",
+    "n_tfidf_cos",
+    "n_len_s",
+    "n_len_c",
+    "n_len_ratio",
+    "n_ntok_s",
+    "n_ntok_c",
+    "n_idf_jacc",
+    "n_unm_s",
+    "n_unm_c",
+    "n_unm_s_idf",
+    "n_unm_c_idf",
+    "n_unm_s_max_idf",
+    "n_unm_c_max_idf",
+    "n_contain",
+    "n_soft_s",
+    "n_soft_c",
+    "n_soft_min",
+    "n_first_eq",
+    "n_first_jw",
+    "n_first_sdx",
+    "n_suf_equal",
+    "n_suf_conflict",
+    "n_suf_onesided",
+    "c_domain_style",
+    "c_nonlatin",
+    "a_c_missing",
+    "a_ratio",
+    "a_tsort",
+    "a_tset",
+    "a_partial",
+    "a_jacc",
+    "a_idf_jacc",
+    "a_tfidf_cos",
+    "a_part_jacc",
+    "a_s_has_num",
+    "a_c_has_num",
+    "a_num_jacc",
+    "a_num_shared",
+    "a_num_conflict",
+    "a_first_num_eq",
+    "a_num_min_edit",
+    "n_tfidf_cos__rank",
+    "n_tfidf_cos__dmax",
+    "n_tfidf_cos__margin",
+    "n_jw__rank",
+    "n_jw__dmax",
+    "n_jw__margin",
+    "n_soft_min__rank",
+    "n_soft_min__dmax",
+    "n_soft_min__margin",
+    "n_idf_jacc__rank",
+    "n_idf_jacc__dmax",
+    "n_idf_jacc__margin",
+    "a_tsort__rank",
+    "a_tsort__dmax",
+    "a_tsort__margin",
+    "a_tfidf_cos__rank",
+    "a_tfidf_cos__dmax",
+    "a_tfidf_cos__margin",
+    "a_num_jacc__rank",
+    "a_num_jacc__dmax",
+    "a_num_jacc__margin"
+  ],
+  "seed": 42,
+  "holdout_80pct_model": {
+    "pr_auc": 0.9972426953723293,
+    "macro_f05": 0.9504088401647797,
+    "thr": 0.55,
+    "note": "optimistic: threshold tuned on the same hold-out; real threshold is chosen in Phase 8"
+  },
+  "family_comparison": {
+    "mlp": {
+      "pr_auc": 0.9949,
+      "macro_f05": 0.9451,
+      "secs": 292.8596
+    },
+    "hist_gbm": {
+      "pr_auc": 0.9936,
+      "macro_f05": 0.9465,
+      "secs": 26.6856
+    },
+    "lightgbm": {
+      "pr_auc": 0.9925,
+      "macro_f05": 0.9486,
+      "secs": 35.5822
+    },
+    "random_forest": {
+      "pr_auc": 0.9922,
+      "macro_f05": 0.936,
+      "secs": 165.3487
+    },
+    "logistic": {
+      "pr_auc": 0.9753,
+      "macro_f05": 0.8973,
+      "secs": 31.299
+    }
+  }
+}

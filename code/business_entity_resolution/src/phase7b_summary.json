@@ -1,0 +1,128 @@
+{
+  "table": [
+    {
+      "model": "hist_gbm (Phase 7)",
+      "PR-AUC": 0.9972,
+      "best_thr": 0.7,
+      "macro_F0.5": 0.9507,
+      "dPR-AUC": 0.0,
+      "dF0.5": 0.0,
+      "boot_lo": 0.0,
+      "boot_hi": 0.0,
+      "beats_reference": false,
+      "fit_s": 60.0,
+      "predict_s_per_M": 12.8
+    },
+    {
+      "model": "lightgbm",
+      "PR-AUC": 0.9974,
+      "best_thr": 0.65,
+      "macro_F0.5": 0.9514,
+      "dPR-AUC": 0.0001,
+      "dF0.5": 0.0007,
+      "boot_lo": -0.0003,
+      "boot_hi": 0.0018,
+      "beats_reference": false,
+      "fit_s": 76.0,
+      "predict_s_per_M": 42.1
+    },
+    {
+      "model": "xgboost",
+      "PR-AUC": 0.9972,
+      "best_thr": 0.725,
+      "macro_F0.5": 0.951,
+      "dPR-AUC": 0.0,
+      "dF0.5": 0.0003,
+      "boot_lo": -0.0011,
+      "boot_hi": 0.0016,
+      "beats_reference": false,
+      "fit_s": 62.0,
+      "predict_s_per_M": 6.8
+    },
+    {
+      "model": "catboost",
+      "PR-AUC": 0.9969,
+      "best_thr": 0.625,
+      "macro_F0.5": 0.9496,
+      "dPR-AUC": -0.0004,
+      "dF0.5": -0.0011,
+      "boot_lo": -0.003,
+      "boot_hi": 0.0009,
+      "beats_reference": false,
+      "fit_s": 87.0,
+      "predict_s_per_M": 0.8
+    },
+    {
+      "model": "mlp_relu_softmax",
+      "PR-AUC": 0.9956,
+      "best_thr": 0.725,
+      "macro_F0.5": 0.9451,
+      "dPR-AUC": -0.0016,
+      "dF0.5": -0.0056,
+      "boot_lo": -0.0079,
+      "boot_hi": -0.0032,
+      "beats_reference": false,
+      "fit_s": 68.0,
+      "predict_s_per_M": 2.6
+    },
+    {
+      "model": "deepsets_relu_softmax",
+      "PR-AUC": 0.9973,
+      "best_thr": 0.75,
+      "macro_F0.5": 0.9491,
+      "dPR-AUC": 0.0001,
+      "dF0.5": -0.0016,
+      "boot_lo": -0.0042,
+      "boot_hi": 0.0011,
+      "beats_reference": false,
+      "fit_s": 76.0,
+      "predict_s_per_M": 2.9
+    },
+    {
+      "model": "blend: hist_gbm (Phase 7) + deepsets_relu_softmax",
+      "PR-AUC": 0.998,
+      "best_thr": 0.525,
+      "macro_F0.5": 0.9532,
+      "dPR-AUC": 0.0007,
+      "dF0.5": 0.0025,
+      "boot_lo": 0.0007,
+      "boot_hi": 0.0043,
+      "beats_reference": false,
+      "fit_s": null,
+      "predict_s_per_M": null
+    },
+    {
+      "model": "blend: all boosters",
+      "PR-AUC": 0.9974,
+      "best_thr": 0.725,
+      "macro_F0.5": 0.951,
+      "dPR-AUC": 0.0001,
+      "dF0.5": 0.0003,
+      "boot_lo": -0.0008,
+      "boot_hi": 0.0016,
+      "beats_reference": false,
+      "fit_s": null,
+      "predict_s_per_M": null
+    },
+    {
+      "model": "blend: all boosters + deepsets_relu_softmax",
+      "PR-AUC": 0.998,
+      "best_thr": 0.55,
+      "macro_F0.5": 0.9529,
+      "dPR-AUC": 0.0008,
+      "dF0.5": 0.0022,
+      "boot_lo": 0.0002,
+      "boot_hi": 0.0044,
+      "beats_reference": false,
+      "fit_s": null,
+      "predict_s_per_M": null
+    }
+  ],
+  "winners": [],
+  "cascade": {
+    "tau": 0.001,
+    "val_pairs_skipped": 0.0657,
+    "val_f05_without": 0.9508,
+    "val_f05_with": 0.9507
+  }
+}

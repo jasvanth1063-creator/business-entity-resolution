@@ -1,0 +1,29 @@
+{
+  "top_features_shap": {
+    "a_num_jacc": 0.0791,
+    "a_tset": 0.0596,
+    "n_ratio": 0.045,
+    "n_unm_c_max_idf": 0.0339,
+    "a_tfidf_cos__rank": 0.0323,
+    "n_soft_c": 0.0312,
+    "n_partial": 0.0294,
+    "a_idf_jacc": 0.0274,
+    "n_unm_c_idf": 0.0261,
+    "n_unm_c": 0.0241
+  },
+  "group_share": {
+    "name_structural": 0.291,
+    "name_basic": 0.215,
+    "addr_basic": 0.176,
+    "relative": 0.172,
+    "addr_numbers": 0.147
+  },
+  "n_explained": 1206,
+  "overlap_with_permutation_top8": [
+    "a_idf_jacc",
+    "a_num_jacc",
+    "a_tset",
+    "n_ratio",
+    "n_unm_c_max_idf"
+  ]
+}

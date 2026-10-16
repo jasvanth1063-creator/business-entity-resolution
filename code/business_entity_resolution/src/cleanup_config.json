@@ -1,0 +1,12 @@
+{
+  "exclusivity": {
+    "enabled": true,
+    "margin": 0.0
+  },
+  "lone": {
+    "enabled": false,
+    "t_rescue": null,
+    "t_lone": null
+  },
+  "val_crossfit_gain_lone": -0.0007
+}

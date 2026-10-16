@@ -1,0 +1,34 @@
+{
+  "adopt": false,
+  "tau": 0.003,
+  "cheap_features": [
+    "name_rank",
+    "name_score",
+    "addr_rank",
+    "addr_score",
+    "in_name",
+    "in_addr",
+    "c_is_s2",
+    "is_us",
+    "n_tfidf_cos",
+    "a_tfidf_cos",
+    "a_c_missing",
+    "n_len_s",
+    "n_len_c",
+    "n_len_ratio"
+  ],
+  "pairs_kept_holdout": 0.18802850565112994,
+  "pairs_kept_val": 0.1918749561187952,
+  "f05_holdout": {
+    "unpruned": 0.9506845142632666,
+    "pruned_frozen": 0.9367662521656105,
+    "pruned_retrained": 0.9493258400668073
+  },
+  "f05_val": {
+    "unpruned": 0.9507878495680049,
+    "pruned": 0.9358426054477891,
+    "blend_unpruned": 0.9558595443641258,
+    "blend_pruned": 0.893050596180372
+  },
+  "per_pair_share_of_feature_time": 0.09306447023188688
+}

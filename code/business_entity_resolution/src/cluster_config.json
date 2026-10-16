@@ -1,0 +1,33 @@
+{
+  "adopt": false,
+  "groups": [],
+  "cluster_columns": [],
+  "first_stage": {
+    "pr_auc": 0.9936134326974821,
+    "macro_f05": 0.9464711425208293,
+    "thr": 0.7000000000000001
+  },
+  "second_stage": {
+    "n_features": 82,
+    "pr_auc": 0.9916710540063044,
+    "macro_f05": 0.9462652840743238,
+    "thr": 0.6500000000000001
+  },
+  "delta_f05": -0.00020585844650566445,
+  "bootstrap_95": [
+    -0.0021456249686355893,
+    0.0015435758962636169
+  ],
+  "rule": "dPR>=0.002 and dF05>=0.003 and bootstrap lower>0",
+  "stacking": {
+    "adopt": false,
+    "note": "second-stage stacking (Phase 6): not adopted"
+  },
+  "post_rules": {
+    "adopt": false,
+    "crossfit_gain": -0.0003,
+    "holdout_gain": -0.0003,
+    "best_setting": null,
+    "rule": "crossfit gain > 0.002 and hold-out gain > 0"
+  }
+}

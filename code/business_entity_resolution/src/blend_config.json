@@ -1,0 +1,14 @@
+{
+  "adopt": true,
+  "weight_gbdt": 0.5,
+  "weight_listwise": 0.5,
+  "threshold": 0.575,
+  "val_crossfit_blend": 0.9559,
+  "val_crossfit_gbdt": 0.9506,
+  "gain": 0.0053,
+  "ci95": [
+    0.0035,
+    0.0071
+  ],
+  "val_pr_auc_blend": 0.9986
+}

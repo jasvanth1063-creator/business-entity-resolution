@@ -1,0 +1,14 @@
+# Python 3.10+ (developed on 3.13). Versions are the ones the results were produced with.
+numpy>=1.26
+pandas>=2.2
+scipy>=1.11
+scikit-learn==1.9.1      # MUST match: model_pair.joblib and feature_stats.pkl were saved with this version (BSD-3)
+joblib>=1.3
+rapidfuzz>=3.6           # MIT
+jellyfish>=1.0           # MIT
+unidecode>=1.3
+matplotlib>=3.8          # notebooks only
+nbformat>=5.9            # notebooks only
+lightgbm>=4.3            # only imported by the Phase 7 notebook (model comparison); not needed by predict.py
+shap>=0.45            # only for the Phase 11 notebook
+torch>=2.2           # listwise attention model (Phase 7b/7d) used by predict_phase13.py; CPU build is enough, a CUDA GPU is used automatically if present

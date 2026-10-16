@@ -1,0 +1,31 @@
+{
+  "val_macro_f05": 0.9508,
+  "threshold": 0.7,
+  "false_positives": 173,
+  "fp_causes": {
+    "other": 101,
+    "candidate address missing": 46,
+    "near-identical name, similar address (likely duplicate/chain)": 22,
+    "near-identical name, different address": 4
+  },
+  "true_matches": 20689,
+  "retrieved": 19217,
+  "accepted": 18332,
+  "top_features": {
+    "a_tset": 0.0157,
+    "n_ratio": 0.0078,
+    "a_num_jacc": 0.0077,
+    "n_unm_c_max_idf": 0.0042,
+    "n_unm_s_max_idf": 0.0019,
+    "n_suf_conflict": 0.0019,
+    "a_idf_jacc": 0.0018,
+    "n_unm_c_idf": 0.0015
+  },
+  "group_importance": {
+    "addr_basic": 0.187,
+    "name_structural": 0.0499,
+    "name_basic": 0.0321,
+    "addr_numbers": 0.0149,
+    "relative": 0.0091
+  }
+}

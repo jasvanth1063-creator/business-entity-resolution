@@ -1,0 +1,66 @@
+{
+  "same_country_only": true,
+  "name_vectorizer": {
+    "kind": "char",
+    "ngram": [
+      2,
+      4
+    ],
+    "max_df": 0.01,
+    "sublinear_tf": false,
+    "variant": "char24"
+  },
+  "K_name": 20,
+  "address_route": {
+    "kind": "word",
+    "ngram": [
+      1,
+      1
+    ],
+    "max_df": 0.05,
+    "route": "addr_only",
+    "K_addr": 20,
+    "weights": null
+  },
+  "normalization_config": {
+    "name_rules": [
+      "accent_strip",
+      "lowercase",
+      "whitespace_collapse",
+      "suffix_canonicalize",
+      "domain_strip",
+      "punct_strip",
+      "whitespace_final"
+    ],
+    "addr_rules": [
+      "abbrev_expand",
+      "punct_strip",
+      "token_sort"
+    ],
+    "criteria": {
+      "accent": "affected tfidf delta>=0.01 and overall gap delta>=-0.002",
+      "addr": "greedy, gain in (gap_edit+gap_jaccard) >= 0.003"
+    }
+  },
+  "measured": {
+    "recall_name_10pct_pool": {
+      "5": 0.6421196893558703,
+      "10": 0.7122887163088168,
+      "20": 0.751027866605756,
+      "50": 0.7936957514846962,
+      "100": 0.8165372316126085
+    },
+    "recall_final_10pct_pool": 0.9758793969849247,
+    "extrapolated_full_pool": {
+      "name_R20": 0.6658251086210758,
+      "chosen_union": 0.9613511079700976
+    },
+    "projected_core_hours_train": 37.8023907602872
+  },
+  "criteria": {
+    "prune": "R@20 loss<=0.005 and speedup>=1.5x",
+    "union": "gain>=0.01 at <=+10 candidates",
+    "K": "cheapest (K1,K2) with K1+K2<=60 within 0.005 of best recall",
+    "engine": "cheapest max_df pair within 0.005 union recall"
+  }
+}
