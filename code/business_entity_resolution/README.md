@@ -51,7 +51,7 @@ dataset/test/    test_source1.tsv   test_source2.tsv   test_source3.tsv
         v
  [5] Blend  p = 0.5 * p_gbdt + 0.5 * p_attention
         v
- [6] Decision rule  p >= 0.575  (global threshold, tuned on validation)
+ [6] Decision rule  p >= 0.975  (global threshold, tuned on validation)
         v
  [7] Cleanup  record exclusivity: a record is kept only by its best-scoring S1 entity
         v
